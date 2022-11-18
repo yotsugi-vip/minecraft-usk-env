@@ -1,0 +1,10 @@
+[Unit]
+Description=auto_start_minecraft_server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/minecraft-usk-startup.sh
+
+[Install]
+WantedBy=multi-user-.target
